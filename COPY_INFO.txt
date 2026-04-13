@@ -1,0 +1,3 @@
+This is a copy of the blueberry-breeding-pipeline repository.
+Original: https://github.com/Abiodun-Olayinka/blueberry-breeding-pipeline
+Copy created on: $(date)

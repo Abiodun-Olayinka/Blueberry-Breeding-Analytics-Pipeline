@@ -1,0 +1,43 @@
+# Blueberry Breeding Pipeline Configuration File
+
+simulation:
+  n_genotypes: 100
+  n_markers: 2000
+  n_years: 3
+  n_locations: 4
+  random_seed: 2024
+
+traits:
+  yield:
+    heritability: 0.45
+    weight: 0.35
+    unit: "kg/plant"
+  fruit_weight:
+    heritability: 0.60
+    weight: 0.15
+    unit: "g"
+  brix:
+    heritability: 0.65
+    weight: 0.15
+    unit: "%"
+  firmness:
+    heritability: 0.55
+    weight: 0.15
+    unit: "N"
+  stem_blight_resistance:
+    heritability: 0.40
+    weight: 0.20
+    unit: "1-9 scale"
+
+prediction:
+  method: "RandomForest"
+  n_estimators: 100
+  max_depth: 10
+  cv_folds: 5
+  random_seed: 2024
+
+output:
+  save_plots: true
+  save_csv: true
+  plot_format: "png"
+  dpi: 300
